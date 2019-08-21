@@ -1,0 +1,633 @@
+/* ИНТЕРФЕЙС АУТЕНТИФИКАЦИИ */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+h3{
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+h3:nth-child(2) {
+	opacity: 0.5;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+} 
+ 
+i {
+	border: solid rgba(32,33,36,.5);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+	position: inherit;
+}
+
+.top { 
+	 display: block;
+}
+
+.bottom {
+	display: block;
+} 
+
+#login-form {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 300px;
+}
+
+#login-form input {
+	font-size: 14px;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"], 
+#login-form input[type="submit"] {
+	display: block;
+	width: 230px;
+	margin: 0 auto;
+	height: 30px;	
+	border: none;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	border-bottom: 1px solid;
+	border-color: #4682B4;
+	opacity: 0.5;
+	text-indent: 1em;
+}
+
+#login-form input[type="email"] {
+	margin-bottom: 3px;
+}
+
+#login-form input[type="submit"] {
+	margin-top: 126px;	
+	background: #6200ee;
+	opacity: 0.8;
+	color: #f1eded;
+}
+
+#login-form input[type="submit"]:hover { 
+	background: #4682B4; 
+}
+
+.main{
+	height:480px;
+    //background-image:url("images/background-main.png"); 
+	background: linear-gradient(to right, #6424bde0, #7625cea1);
+	background-size: 300px 480px; 
+	background-repeat: no-repeat; 	
+}
+
+.logo {
+	margin: 0;
+	position: relative;
+    top: 60px;
+    left: 65px;
+}
+
+.email {
+	position: relative;
+    top: 120px;
+}
+
+.password {
+	position: relative;
+    top: 120px;
+}
+
+/*ПЕРВЫЙ ИНТЕРФЕЙС ВОДИТЕЛЯ */
+
+#shipper-form {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 300px;
+	font-size: 12px;
+	border: 1px solid lightgrey;
+}
+
+#shipper-form input{ 
+	width: 175px;
+	margin-top: 5px;
+	border: none;
+	background: none;
+ } 
+
+.shipper-main{
+	height: 480px;
+}
+
+#shipper-form .top-bar h3:nth-child(1) {
+	margin-left: 20px;
+}
+
+#shipper-form .top-bar h3:nth-child(2) {
+	margin-left: 41px;
+}
+
+.name-top {
+	font-weight: bold;
+	font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-top span {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    display: inline-block;
+    margin-left: 10px
+}
+
+.top-bar {
+	background: linear-gradient(to right, #242bbd, #7625ce);
+	box-shadow: 0px 3px 12px #bbbbbb;
+}
+
+.menu-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.menu-nav span {
+	text-align: center;
+	text-transform: uppercase;
+	flex-grow: 1;
+	margin-top: 15px;
+	padding-bottom: 8px;
+}
+
+/* НАЧАЛО ВКЛАДКИ "ТЕКУЩАЯ" */
+
+.info button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+.current-info {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.current-info label {
+	padding-top: 5px;
+}
+
+.current-route {
+	text-align: center;
+	padding-top: 5px;
+}
+
+.current-route.open {
+	height: auto;
+}
+
+.allRoute {
+	color: blue;
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.circle:before {
+  content: ' \25CF';
+  font-size: 12px;
+  color: #6200ee;
+  display: block;
+}
+
+.notifications {
+	margin-top: 10px;
+	height: 70px;
+	width: 280px;	
+	position: relative;
+	left: 10px;	
+	background-color: white;
+	border: 1px solid rgb(190,190,190);
+	border-radius: 5px;
+	box-shadow: 0 6px 4px -2px #bbbbbb;
+}
+
+.notifications p {
+	display: inline-block;
+	position: relative;
+	bottom: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.notifications .timeNotification {	
+	right: 156px;
+	bottom: 1px;
+	color: #0196f1;
+}
+
+.notifications span {
+	display: inline-block;
+    width: 100%;
+    margin-top: 6px;
+    margin-left: 10px;
+	color: #0196f1;
+}
+
+.notifications img {
+	border-radius: 100px;
+    height: 32px;
+    padding: 6px;    
+}
+
+.complete {
+	display: block;
+	text-align: center;
+	margin-top: 35px;
+    position: relative;
+	margin-top: 145px;
+}
+
+.complete button{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+	border: 1px solid lightgray;
+    border-radius: 5px;    
+    background: #6200ee;
+	cursor: pointer;
+}
+
+.noTransportation {
+	font-size: 16px;
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+}
+
+/* КОНЕЦ ВКЛАДКИ "ТЕКУЩАЯ" */
+
+
+/* НАЧАЛО ВКЛАДКИ "НОВЫЕ" */
+ 
+.list-table {
+	border-spacing: 0;
+	padding: 0 5px 0 5px;
+}
+ 
+.new-table .list-table  td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-right: 2px;
+	padding-top: 9px;
+}
+
+table tbody {
+	font-size: 12px;
+}
+
+table tbody td {
+	padding: 8px 0px;
+	border-bottom: 1px solid lightgray;
+}
+
+.date{
+	width: 1px;	/* хак. подгоняет ширину по содержимому*/
+	padding-right: 5px;
+}
+
+.route {
+	width: 1px;
+	padding-right: 5px;
+}
+
+.route-details {
+	padding-right: 5px;	
+}
+
+.routeDetails:before {
+    color: rgba(32,33,36,.5);
+    font-size: 20px;
+    transition: transform 365ms cubic-bezier(.4,0,.2,1);
+}
+
+.routeDetails {
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    height: 24px;
+    width: 24px;
+	background: 0 0;
+	border: 0;
+    cursor: pointer;
+}
+
+.arrowUp {
+	border: solid rgba(32,33,36,.5);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+	-webkit-transform: rotate(-135deg);
+}
+
+#shipper-form .tableButton {
+    color: white;
+    padding: 6px 8px;
+	margin-left: 2px;
+	border: 1px solid lightgray;
+    border-radius: 5px;
+	cursor: pointer;
+    background: #6200ee;
+}
+
+.tableButton:focus {
+	box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+/* КОНЕЦ ВКЛАДКИ "НОВЫЕ" */
+
+
+/* НАЧАЛО ВКЛАДКИ "ИСТОРИЯ" */
+
+.history table tbody td {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.history .list-table td {
+	padding-right: 5px;
+}
+
+/* КОНЕЦ ВКЛАДКИ "ИСТОРИЯ" */
+
+
+/* КОНЕЦ ПЕРВОГО ИНТЕРФЕЙСА ВОДИТЕЛЯ */
+
+/*ВТОРОЙ ИНТЕРФЕЙС ВОДИТЕЛЯ */
+
+.current-info-v2 {
+	margin-top: 10px;
+	text-align: center;
+	height: 330px;
+	overflow: auto;
+	box-shadow: inset 0px -11px 16px -9px #bbbbbb;
+}
+
+.current-info-v2::-webkit-scrollbar {
+	width: 0px;
+}
+
+.current-route-v2 {
+	padding-top: 5px;
+	text-align: center;
+}
+
+.complete-v2 {
+	display: block;
+	text-align: center;
+	margin-top: 35px;
+    position: relative;
+	bottom: 25px;
+}
+
+.complete-v2 button{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+	border: 1px solid lightgray;
+    border-radius: 5px;    
+    background: #6200ee;
+	cursor: pointer;
+}
+
+/*КОНЕЦ ВТОРОГО ИНТЕРФЕЙСА ВОДИТЕЛЯ */
+
+
+/* ИНТЕРФЕЙС ОХРАННИКА */
+
+#security-form {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 300px;
+	font-size: 12px;
+	border:1px solid lightgrey;
+}
+
+.security-main{
+	height: 480px;
+}
+
+#security-form h3 {
+	margin-left: 12px;
+}
+
+#security-form h3:nth-child(2) {
+	margin-left: 98px;
+}
+
+#security-form .menu-nav > span {
+	padding-left: 12px;
+	padding-right: 7px;
+}
+
+.rectangle1 {
+	display: inline-block;
+	width: 12px;
+	height: 21px;
+	background-color: blue;
+	margin-right: 6px;
+}
+
+.rectangle2 {
+	display: inline-block;
+	width: 12px;
+	height: 21px;
+	background-color: red;
+	margin-right: 6px;
+}
+
+.rectangle3 {
+	display: inline-block;
+	width: 12px;
+	height: 21px;
+	background-color: black;
+	margin-right: 6px;
+}
+
+.car-name {
+	vertical-align: super;
+}
+
+#security-form .tableButton {
+    color: white;
+    padding: 6px 8px;	
+	border: 1px solid lightgray;
+    border-radius: 5px;
+	cursor: pointer;
+    background: #6200ee;
+}
+
+.near-territory .list-table td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+.info-security table td:nth-child(2) {
+	padding-left: 10px;
+}
+
+
+.near-territory .route-details {
+	padding-left: 30px;
+	padding-right: 5px;
+}
+
+.info-security-loading .list-table td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.info-security-loading .route-details  {
+	padding-left: 100px;
+	padding-right: 3px;
+}
+
+.info-departure .list-table td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;	
+}
+
+.info-departure .route-details {
+	padding-left: 30px;
+}
+
+.full-name {
+	position: relative;
+	color: blue;
+	white-space: nowrap;
+	max-width: 80px;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.full-name::after {
+	display: inline-block;
+	position: absolute;
+	left:0;
+    content: '';
+	height: 100px;
+	width: 20px;
+    background: linear-gradient(top,#000, 70%, #fff);
+}
+
+.info-security .car-color {
+	padding-left: 3px;
+}
+
+.info-security .tableButton {
+	padding: 6px 5px;
+}
+
+.info-security .notifications {
+	bottom: 50px;
+	left: 10px;
+}
+
+.info-security .timeNotification {
+	bottom: 17px;
+	left: 46px;
+}
+
+/* КОНЕЦ ИНТЕРЙФЕЙСА КЛАДОВЩИКА */
+
+
+/* ИНТЕРФЕЙС КЛАДОВЩИКА */
+
+#storekeeper-form {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 300px;
+	font-size: 12px;	
+}
+
+#storekeeper-form h3:nth-child(2) {
+	margin-left: 100px;
+}
+
+.storekeeper-main{
+	height: 480px;
+}
+
+#storekeeper-form .menu-nav > span {
+    padding-left: 9px;
+    padding-right: 6px;
+}
+
+#storekeeper-form .tableButton {
+    color: white;
+    padding: 6px 8px;
+	border: 1px solid lightgray;
+    border-radius: 5px;
+	cursor: pointer;
+    background: #6200ee;
+}
+
+.info-storekeeper table td:nth-child(2) {
+	padding-left: 10px;
+}
+
+.wait-loading .list-table td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.wait-loading .route-details {
+	padding-left: 30px;
+	padding-right: 5px;
+}
+
+.loading-in-progress .list-table td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.loading-in-progress .route-details {
+	padding-left: 40px;
+	padding-right: 5px;
+}
+
+.info-finished-loading .list-table td {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.info-finished-loading .route-details  {
+	padding-left: 97px;
+}
+
+/* КОНЕЦ ИНТЕРФЕЙСА КЛАДОВЩИКА */

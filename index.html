@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	  <meta charset="utf-8"/> 
+	  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	  <link href = "style.css" rel="stylesheet">
+	  <script defer type="text/javascript" src="script.js"></script>
+	  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>	
+	  <title>Интерфейсы</title>
+	</head>
+	<body>   
+		<div id="login-form">
+			<img class="top" src="images/android-status-bar1.png">
+			<div class="main">
+				<img class="logo" src="images/logo_tms_mid.png">
+				<input type="email" class="email" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
+				<input type="password" class="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+				<input type="submit" class="" value="Войти">        
+			</div>
+			<img class="bottom" src="images/android-bottom-bar1.png">
+		</div>
+		
+		<div id="shipper-form">
+			<img class="top" src="images/android-status-bar1.png">
+			<div class = "shipper-main">
+				<div class="top-bar">
+					<h3>Перевозки</h3>
+					<h3>Водитель: Иванов А.А</h3>
+					<div class="menu-nav">
+						<span class="menu-current"><a href ="#" onclick="return false">Текущая</a></span>
+						<span class="menu-new"><a href ="#" onclick="return false">Новые</a></span>
+						<span class="menu-history"><a href ="#" onclick="return false">История</a></span>
+					</div>
+				</div>
+				<div class="info">
+					<div class = "current-info">
+						<span><b>Дата начала</b></span>				
+						<label style="display: block;">20.06.2019 08:15</label>
+						<br/>
+						<span><b>Маршрут</b></span></br>
+						<div class="current-route">
+							г.Рязань,ул.Ленина,д.1
+							<span class = "circle"></span>
+							г.Москва,ул.Тверская,д.3
+						</div>				
+					</div>
+					<div class="notifications">
+						<span>TMS • Охранник Иван Иванов</span>
+						<img src="images/icon.png" class="userPhoto">
+						<p>Въезжайте на территорию!</p>
+						<p class="timeNotification">12:03</p>					
+					</div>	
+					<div class ="complete">
+						<button class="">Завершить</button>
+					</div>
+				</div>
+			</div>
+			<img class="bottom" src="images/android-bottom-bar1.png">
+		</div>
+		
+		<div id="shipper-form">
+			<img class="top" src="images/android-status-bar1.png">
+			<div class = "shipper-main">
+				<div class="top-bar">
+					<h3>Перевозки</h3>
+					<h3>Водитель: Иванов А.А</h3>
+					<div class="menu-nav">
+						<span class="menu-current"><a href ="#" onclick="return false">Текущая</a></span>
+						<span class="menu-new"><a href ="#" onclick="return false">Новые</a></span>
+						<span class="menu-history"><a href ="#" onclick="return false">История</a></span>
+					</div>
+				</div>
+				<div class="info">
+					<div class = "current-info-v2">
+						<span><b>Дата начала</b></span>				
+						<label style="display: block;">20.06.2019 08:15</label>
+						<br/>
+						<span><b>Маршрут</b></span></br>
+						<div class="current-route-v2">
+							г.Рязань,ул.Ленина,д.1
+							<span class = "circle"></span>
+							г.Москва,ул.Тверская,д.3
+							<span class = "circle"></span>
+							г.Рязань,ул.Лесная,д.4
+							<span class = "circle"></span>
+							г.Москва,ул.Брюллова,д.15
+							<span class = "circle"></span>
+							г.Рязань,ул.Ленина,д.1
+							<span class = "circle"></span>
+							г.Москва,ул.Каменка, д.21
+							<span class = "circle"></span>
+							г.Москва,ул.Карьер, д.33
+							<span class = "circle"></span>
+							г.Москва,ул.Боженко,д.32
+							<span class = "circle"></span>
+							г.Москва,ул.Арбат,д.8
+							<span class = "circle"></span>
+							г.Москва,ул.Боженко,д.32
+							<span class = "circle"></span>
+							г.Москва,ул.Арбат,д.8
+							<span class = "circle"></span>
+							г.Москва,ул.Боженко,д.32
+							<span class = "circle"></span>
+							г.Москва,ул.Арбат,д.8
+							<span class = "circle"></span>
+							г.Рязань,ул.Лесная,д.4
+							<span class = "circle"></span>
+							г.Москва,ул.Брюллова,д.15
+							<span class = "circle"></span>
+							г.Рязань,ул.Ленина,д.1
+							<span class = "circle"></span>
+							г.Москва,ул.Каменка, д.21
+							<span class = "circle"></span>
+							г.Москва,ул.Карьер, д.33
+							<span class = "circle"></span>
+							г.Москва,ул.Боженко,д.32
+							<span class = "circle"></span>
+							г.Москва,ул.Арбат,д.8
+							<span class = "circle"></span>
+							г.Москва,ул.Боженко,д.32
+							<span class = "circle"></span>
+							г.Москва,ул.Арбат,д.8
+							<span class = "circle"></span>
+							г.Москва,ул.Боженко,д.32
+							<span class = "circle"></span>
+							г.Москва,ул.Арбат,д.8
+							<span class = "circle"></span>
+							г.Рязань,ул.Лесная,д.4
+							<span class = "circle"></span>
+							г.Москва,ул.Брюллова,д.15
+							<span class = "circle"></span>
+							г.Рязань,ул.Ленина,д.1
+							<span class = "circle"></span>
+							г.Москва,ул.Каменка, д.21
+						</div>				
+					</div>
+					<div class ="complete-v2">
+						<button class="">Завершить</button>
+					</div>
+				</div>
+			</div>
+			<img class="bottom" src="images/android-bottom-bar1.png">
+		</div>
+		
+		<div id="security-form">
+			<img class="top" src="images/android-status-bar1.png">
+			<div class = "security-main">
+				<div class="top-bar">
+					<h3>ТС</h3>
+					<h3>Охранник: Иванов А.А</h3>
+					<div class="menu-nav">
+						<span class="menu-territory"><a href ="#" onclick="return false">У террит-и</a></span>
+						<span class="menu-loading"><a href ="#" onclick="return false">Ждут погрузку</a></span>
+						<span class="menu-departure"><a href ="#" onclick="return false">Ждут выезд</a></span>
+					</div>
+				</div>
+				<div class="info-security">
+					<div class="near-territory">
+						<table class="list-table">
+						<tbody>
+							<tr>
+								<td><b>ТС</b></td>
+								<td><b>ФИО</b></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><span class="rectangle1"></span><span class="car-name">Volvo 20т</span></td>
+								<td class="full-name">Константинопольский О.А.</td>
+								<td class="route-details">
+									<button class="routeDetails">
+									<i class="arrowUp"></i>
+									</button>
+								</td>
+								<td class="invite">
+									<button class="tableButton">Приг-ть</button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="rectangle2"></span><span class="car-name">Volvo 15т</span></td>
+								<td class="full-name">Иванов А.А.</td>
+								<td class="route-details">
+									<button class="routeDetails">
+									<i class="arrowUp"></i>
+									</button>
+								</td>
+								<td class="invite">
+									<button class="tableButton">Приг-ть</button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="rectangle3"></span><span class="car-name">Volvo 11т</span></td>
+								<td class="full-name">Иванов А.А.</td>
+								<td class="route-details">
+									<button class="routeDetails">
+									<i class="arrowUp"></i>
+									</button>
+								</td>
+								<td class="invite">
+									<button class="tableButton">Приг-ть</button>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<img class="bottom" src="images/android-bottom-bar1.png">
+		</div>
+
+		<div id="storekeeper-form">
+			<img class="top" src="images/android-status-bar1.png">
+			<div class = "storekeeper-main">
+				<div class="top-bar">
+					<h3>ТС</h3>
+					<h3>Кладовщик: Иванов А.А</h3>
+					<div class="menu-nav">
+						<span class="menu-wait-loading"><a href ="#" onclick="return false">Ждут погрузку</a></span>
+						<span class="menu-sk-loading"><a href ="#" onclick="return false">Идет погрузка</a></span>
+						<span class="menu-finished-loading"><a href ="#" onclick="return false">Закончилась погрузка</a></span>
+					</div>
+				</div>
+				<div class="info-storekeeper">
+					<div class="wait-loading">
+						<table class="list-table">
+						<tbody>
+							<tr>
+								<td><b>ТС</b></td>
+								<td><b>ФИО</b></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><span class="rectangle1"></span><span class="car-name">Volvo 20т</span></td>
+								<td class="full-name">Константинопольский О.А.</td>
+								<td class="route-details">
+									<button class="routeDetails">
+									<i class="arrowUp"></i>
+									</button>
+								</td>
+								<td class="invite">
+									<button class="tableButton">Приг-ть</button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="rectangle2"></span><span class="car-name">Volvo 15т</span></td>
+								<td class="full-name">Иванов А.А.</td>
+								<td class="route-details">
+									<button class="routeDetails">
+									<i class="arrowUp"></i>
+									</button>
+								</td>
+								<td class="invite">
+									<button class="tableButton">Приг-ть</button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="rectangle3"></span><span class="car-name">Volvo 11т</span></td>
+								<td class="full-name">Иванов А.А.</td>
+								<td class="route-details">
+									<button class="routeDetails">
+									<i class="arrowUp"></i>
+									</button>
+								</td>
+								<td class="invite">
+									<button class="tableButton">Приг-ть</button>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<img class="bottom" src="images/android-bottom-bar1.png">
+		</div>
+	</body>
+</html>
