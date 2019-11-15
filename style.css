@@ -355,7 +355,7 @@ table tbody td {
 	border: 1px solid lightgray;
     border-radius: 5px;
 	cursor: pointer;
-    background: #6200ee;
+    background: #4a84da;
 }
 
 .tableButton:focus {
