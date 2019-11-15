@@ -480,10 +480,10 @@ table tbody td {
 #security-form .tableButton {
     color: white;
     padding: 6px 8px;	
-	border: 1px solid lightgray;
+	border: none;
     border-radius: 5px;
 	cursor: pointer;
-    background: #6200ee;
+    background: #4a84da;
 }
 
 .near-territory .list-table td {
@@ -587,10 +587,10 @@ table tbody td {
 #storekeeper-form .tableButton {
     color: white;
     padding: 6px 8px;
-	border: 1px solid lightgray;
+	border: none;
     border-radius: 5px;
 	cursor: pointer;
-    background: #6200ee;
+    background: #4a84da;
 }
 
 .info-storekeeper table td:nth-child(2) {
