@@ -213,7 +213,7 @@ button:focus {
 .circle:before {
   content: ' \25CF';
   font-size: 12px;
-  color: #6200ee;
+  color: #4a84da;
   display: block;
 }
 
@@ -415,7 +415,7 @@ table tbody td {
     padding: .8em 1em calc(.8em + 3px);
 	border: 1px solid lightgray;
     border-radius: 5px;    
-    background: #6200ee;
+    background: #4a84da;
 	cursor: pointer;
 }
 
@@ -524,7 +524,7 @@ table tbody td {
 
 .full-name {
 	position: relative;
-	color: blue;
+	color: #4a84da;
 	white-space: nowrap;
 	max-width: 80px;    
     overflow: hidden;
