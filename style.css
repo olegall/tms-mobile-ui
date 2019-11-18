@@ -1,4 +1,4 @@
-/* ИНТЕРФЕЙС АУТЕНТИФИКАЦИИ */ 
+/* ИНТЕРФЕЙС АУТЕНТИФИКАЦИИ */
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -16,7 +16,7 @@ h3{
 }
 
 h3:nth-child(2) {
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 a {
@@ -40,20 +40,20 @@ i {
 	display: block;
 } 
 
-#login-form {
+.login-form {
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	width: 300px;
 }
 
-#login-form input {
+.login-form input {
 	font-size: 14px;
 }
 
-#login-form input[type="email"],
-#login-form input[type="password"], 
-#login-form input[type="submit"] {
+.login-form input[type="email"],
+.login-form input[type="password"], 
+.login-form input[type="submit"] {
 	display: block;
 	width: 230px;
 	margin: 0 auto;
@@ -61,8 +61,8 @@ i {
 	border: none;
 }
 
-#login-form input[type="email"],
-#login-form input[type="password"] {
+.login-form input[type="email"],
+.login-form input[type="password"] {
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 	border-bottom: 1px solid;
@@ -71,25 +71,24 @@ i {
 	text-indent: 1em;
 }
 
-#login-form input[type="email"] {
+.login-form input[type="email"] {
 	margin-bottom: 3px;
 }
 
-#login-form input[type="submit"] {
+.login-form input[type="submit"] {
 	margin-top: 126px;	
-	background: #6200ee;
+	background: #01416f;
 	opacity: 0.8;
 	color: #f1eded;
 }
 
-#login-form input[type="submit"]:hover { 
+.login-form input[type="submit"]:hover { 
 	background: #4682B4; 
 }
 
 .main{
 	height:480px;
-    //background-image:url("images/background-main.png"); 
-	background: linear-gradient(to right, #6424bde0, #7625cea1);
+	background: #4a84da;
 	background-size: 300px 480px; 
 	background-repeat: no-repeat; 	
 }
@@ -113,7 +112,7 @@ i {
 
 /*ПЕРВЫЙ ИНТЕРФЕЙС ВОДИТЕЛЯ */
 
-#shipper-form {
+.shipper-form {
 	margin: 0 auto;
 	margin-bottom: 50px;
 	width: 300px;
@@ -121,7 +120,7 @@ i {
 	border: 1px solid lightgrey;
 }
 
-#shipper-form input{ 
+.shipper-form input{ 
 	width: 175px;
 	margin-top: 5px;
 	border: none;
@@ -132,11 +131,11 @@ i {
 	height: 480px;
 }
 
-#shipper-form .top-bar h3:nth-child(1) {
+.shipper-form .top-bar h3:nth-child(1) {
 	margin-left: 20px;
 }
 
-#shipper-form .top-bar h3:nth-child(2) {
+.shipper-form .top-bar h3:nth-child(2) {
 	margin-left: 41px;
 }
 
@@ -158,7 +157,7 @@ i {
 }
 
 .top-bar {
-	background: linear-gradient(to right, #242bbd, #7625ce);
+	background: #4a84da;
 	box-shadow: 0px 3px 12px #bbbbbb;
 }
 
@@ -214,7 +213,7 @@ button:focus {
 .circle:before {
   content: ' \25CF';
   font-size: 12px;
-  color: #6200ee;
+  color: #4a84da;
   display: block;
 }
 
@@ -273,7 +272,7 @@ button:focus {
     padding: .8em 1em calc(.8em + 3px);
 	border: 1px solid lightgray;
     border-radius: 5px;    
-    background: #6200ee;
+    background: #4a84da;
 	cursor: pointer;
 }
 
@@ -349,14 +348,14 @@ table tbody td {
 	-webkit-transform: rotate(-135deg);
 }
 
-#shipper-form .tableButton {
+.shipper-form .tableButton {
     color: white;
     padding: 6px 8px;
 	margin-left: 2px;
 	border: 1px solid lightgray;
     border-radius: 5px;
 	cursor: pointer;
-    background: #6200ee;
+    background: #4a84da;
 }
 
 .tableButton:focus {
@@ -416,7 +415,7 @@ table tbody td {
     padding: .8em 1em calc(.8em + 3px);
 	border: 1px solid lightgray;
     border-radius: 5px;    
-    background: #6200ee;
+    background: #4a84da;
 	cursor: pointer;
 }
 
@@ -425,27 +424,28 @@ table tbody td {
 
 /* ИНТЕРФЕЙС ОХРАННИКА */
 
-#security-form {
+.security-form {
 	margin: 0 auto;
 	margin-bottom: 50px;
 	width: 300px;
 	font-size: 12px;
-	border:1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
 }
 
 .security-main{
 	height: 480px;
 }
 
-#security-form h3 {
+.security-form h3 {
 	margin-left: 12px;
 }
 
-#security-form h3:nth-child(2) {
+.security-form h3:nth-child(2) {
 	margin-left: 98px;
 }
 
-#security-form .menu-nav > span {
+.security-form .menu-nav > span {
 	padding-left: 12px;
 	padding-right: 7px;
 }
@@ -478,13 +478,13 @@ table tbody td {
 	vertical-align: super;
 }
 
-#security-form .tableButton {
+.security-form .tableButton {
     color: white;
     padding: 6px 8px;	
-	border: 1px solid lightgray;
+	border: none;
     border-radius: 5px;
 	cursor: pointer;
-    background: #6200ee;
+    background: #4a84da;
 }
 
 .near-territory .list-table td {
@@ -496,6 +496,9 @@ table tbody td {
 	padding-left: 10px;
 }
 
+.info-security .near-territory  table td:nth-child(2) {
+	padding-left: 22px;
+}
 
 .near-territory .route-details {
 	padding-left: 30px;
@@ -519,13 +522,17 @@ table tbody td {
 	padding-bottom: 9px;	
 }
 
+.info-security .info-departure table td:nth-child(2) {
+	padding-left: 22px;
+}
+
 .info-departure .route-details {
 	padding-left: 30px;
 }
 
 .full-name {
 	position: relative;
-	color: blue;
+	color: #4a84da;
 	white-space: nowrap;
 	max-width: 80px;    
     overflow: hidden;
@@ -565,14 +572,16 @@ table tbody td {
 
 /* ИНТЕРФЕЙС КЛАДОВЩИКА */
 
-#storekeeper-form {
+.storekeeper-form {
 	margin: 0 auto;
 	margin-bottom: 50px;
 	width: 300px;
 	font-size: 12px;	
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
 }
 
-#storekeeper-form h3:nth-child(2) {
+.storekeeper-form h3:nth-child(2) {
 	margin-left: 100px;
 }
 
@@ -580,18 +589,18 @@ table tbody td {
 	height: 480px;
 }
 
-#storekeeper-form .menu-nav > span {
+.storekeeper-form .menu-nav > span {
     padding-left: 9px;
     padding-right: 6px;
 }
 
-#storekeeper-form .tableButton {
+.storekeeper-form .tableButton {
     color: white;
     padding: 6px 8px;
-	border: 1px solid lightgray;
+	border: none;
     border-radius: 5px;
 	cursor: pointer;
-    background: #6200ee;
+    background: #4a84da;
 }
 
 .info-storekeeper table td:nth-child(2) {
