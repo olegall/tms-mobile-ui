@@ -429,7 +429,8 @@ table tbody td {
 	margin-bottom: 50px;
 	width: 300px;
 	font-size: 12px;
-	border:1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
 }
 
 .security-main{
@@ -569,6 +570,8 @@ table tbody td {
 	margin-bottom: 50px;
 	width: 300px;
 	font-size: 12px;	
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
 }
 
 #storekeeper-form h3:nth-child(2) {
